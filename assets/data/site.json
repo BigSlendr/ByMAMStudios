@@ -1,0 +1,158 @@
+{
+  "site": {
+    "name": "By MAM Studios",
+    "tagline": "Building brands, designing systems, executing vision.",
+    "description": "A professional platform for Michael Marino's ventures across press infrastructure, consumer brands and operational systems.",
+    "email": "contact@bymamstudios.com",
+    "linkedin": "https://www.linkedin.com/in/michael-anthony-marino-40aba999",
+    "domain": "bymamstudios.com"
+  },
+  "featured": [
+    {
+      "slug": "avedon",
+      "name": "Avedon",
+      "subtitle": "Streetwear brand system",
+      "color": "gold"
+    },
+    {
+      "slug": "mt-mug",
+      "name": "MT Mug Coffee",
+      "subtitle": "Borough-inspired lifestyle coffee brand",
+      "color": "navy"
+    },
+    {
+      "slug": "bobby-black",
+      "name": "Bobby Black NYC",
+      "subtitle": "Operational systems for rapid ordering and menu updates",
+      "color": "burgundy"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "avedon",
+      "name": "Avedon",
+      "subtitle": "Streetwear brand system with an elevated, modern edge.",
+      "category": "Brand + Commerce",
+      "tags": ["Brand Strategy", "Design Direction", "Product Concepts"],
+      "role": "Brand Founder / Creative Director",
+      "year": "2025–2026",
+      "problem": "Develop a distinctive streetwear identity that feels bold and scalable across multiple product categories.",
+      "approach": [
+        "Defined the brand personality and visual rules.",
+        "Developed sub-brand architecture for future expansion.",
+        "Created repeatable design guidelines for apparel-ready outputs."
+      ],
+      "execution": [
+        "Brand identity systems",
+        "Apparel graphics design direction",
+        "Naming and sub-brand hierarchy"
+      ],
+      "outcome": "A foundation ready to scale from designs to a structured brand ecosystem with consistent identity and product direction.",
+      "metrics": ["Consistency system", "Scalable templates"],
+      "links": [{ "label": "Visit Avedon", "href": "https://avedonco.com" }]
+    },
+    {
+      "slug": "mt-mug",
+      "name": "MT Mug Coffee",
+      "subtitle": "Borough-inspired lifestyle coffee brand.",
+      "category": "Brand + Web",
+      "tags": ["Brand Story", "Web UX", "Packaging"],
+      "role": "Co-Builder / Strategy + Web Direction",
+      "year": "2025–2026",
+      "problem": "Create a visually attractive, easy-to-use brand experience that feels local, ritual-driven and built for growth.",
+      "approach": [
+        "Positioned the brand around borough identity and daily ritual.",
+        "Planned web UX improvements emphasizing clarity, trust and conversion.",
+        "Outlined SEO/meta structure for discoverability."
+      ],
+      "execution": [
+        "Homepage UX direction",
+        "Metadata/SEO strategy",
+        "Visual motifs for packaging and lifestyle imagery"
+      ],
+      "outcome": "A clear blueprint for a high-conversion, brand-forward coffee site experience with scalable visual structure.",
+      "metrics": ["Clarity-first UX", "Brand cohesion"],
+      "links": [{ "label": "Visit MT Mug", "href": "https://mtmug.com" }]
+    },
+    {
+      "slug": "bobby-black",
+      "name": "Bobby Black NYC",
+      "subtitle": "Order intake and menu update workflows built for speed.",
+      "category": "Operations + Systems",
+      "tags": ["Operational Systems", "Menu Management", "Order Flow"],
+      "role": "Systems Builder",
+      "year": "2025–2026",
+      "problem": "Enable simple order submissions and rapid menu updates without heavy tooling.",
+      "approach": [
+        "Designed low-friction order submission routes (email-based).",
+        "Created an update process for menu changes with clear diffs.",
+        "Prioritized operational simplicity and reliability."
+      ],
+      "execution": [
+        "Email-based order intake structure",
+        "Menu change tracking process",
+        "Website integration plan"
+      ],
+      "outcome": "A lightweight operational approach that keeps ordering and updates fast, simple and scalable.",
+      "metrics": ["Reduced friction", "Faster updates"],
+      "links": [{ "label": "Visit Bobby Black NYC", "href": "https://bobbyblacknyc.com" }]
+    },
+    {
+      "slug": "staten-news",
+      "name": "Staten News",
+      "subtitle": "Newsletter brand spanning tech, finance, and sports.",
+      "category": "Media + Publishing",
+      "tags": ["Editorial Identity", "Content System", "Publishing Workflow"],
+      "role": "Creator / Editor",
+      "year": "2025–2026",
+      "problem": "Build a consistent editorial identity with repeatable weekly formats and strong brand voice.",
+      "approach": [
+        "Defined recurring series structures and publishing rhythm.",
+        "Built content grouping approach for repeatability across categories.",
+        "Created a brand persona to keep the tone memorable."
+      ],
+      "execution": [
+        "Recurring content architecture",
+        "Brand voice + editorial framing",
+        "Publishing process organization"
+      ],
+      "outcome": "A repeatable media system that supports consistent output and strengthens the brand as a trusted voice over time.",
+      "metrics": ["Repeatable format", "Consistent cadence"],
+      "links": [{ "label": "Visit Staten News", "href": "https://statennews.com" }]
+    }
+  ],
+  "extras": [
+    {
+      "title": "Newsletter: Building Multi-Brand Ecosystems",
+      "desc": "A deep dive into how By MAM Studios approaches multi-brand platforms and infrastructure.",
+      "href": "#"
+    },
+    {
+      "title": "Video: Behind the Brand — Avedon",
+      "desc": "An inside look at the creative and operational process behind Avedon's streetwear system.",
+      "href": "#"
+    },
+    {
+      "title": "Article: Automating Media Workflows",
+      "desc": "On leveraging automation to streamline content production and distribution.",
+      "href": "#"
+    }
+  ],
+  "media": [
+    {
+      "title": "Feature: Avedon in The New York Times",
+      "desc": "A feature on the rise of the Avedon collection in modern streetwear.",
+      "href": "#"
+    },
+    {
+      "title": "Interview: MT Mug on Borough Coffee Culture",
+      "desc": "An interview about how MT Mug roots its identity in local ritual and community.",
+      "href": "#"
+    },
+    {
+      "title": "Spotlight: Bobby Black's Operational Innovation",
+      "desc": "How streamlined ordering and menu management are reshaping quick-service dining.",
+      "href": "#"
+    }
+  ]
+}

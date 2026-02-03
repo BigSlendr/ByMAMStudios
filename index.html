@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>By MAM Studios | Premium Brand Systems</title>
+    <meta
+      name="description"
+      content="By MAM Studios showcases selected builds across media, commerce, and technology — designed with an institutional, premium approach."
+    />
+    <link rel="canonical" href="https://bymamstudios.com/" />
+    <meta property="og:title" content="By MAM Studios" />
+    <meta
+      property="og:description"
+      content="Building brands, designing systems, executing vision across media, commerce, and technology."
+    />
+    <meta property="og:image" content="https://bymamstudios.com/assets/images/og-image.svg" />
+    <meta property="og:url" content="https://bymamstudios.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "By MAM Studios",
+        "url": "https://bymamstudios.com",
+        "email": "contact@bymamstudios.com",
+        "sameAs": ["https://www.linkedin.com/in/michael-anthony-marino-40aba999"]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Michael Marino",
+        "worksFor": "By MAM Studios",
+        "url": "https://bymamstudios.com"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page-gradient" aria-hidden="true"></div>
+    <header class="site-header" id="home">
+      <nav class="nav" aria-label="Primary">
+        <a class="logo" href="./index.html">By MAM Studios</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#home" class="nav-link is-active">Home</a>
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#extras" class="nav-link">Extras</a>
+          <a href="#media" class="nav-link">Media</a>
+          <button class="nav-link nav-contact" type="button" data-modal-open>
+            Contact
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">By MAM Studios</p>
+            <h1 id="hero-title">
+              Building brands. Designing systems. Executing vision.
+            </h1>
+            <p class="hero-subtext">
+              By MAM Studios showcases selected builds across media, commerce and
+              technology — designed with an institutional, premium approach.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#work">Explore work</a>
+              <a class="btn btn-ghost" href="./work/index.html">Full portfolio</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <svg viewBox="0 0 360 360" role="img" aria-hidden="true">
+              <defs>
+                <linearGradient id="gold-gradient" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#C6A15B" />
+                  <stop offset="100%" stop-color="#6E5832" />
+                </linearGradient>
+              </defs>
+              <rect width="360" height="360" rx="48" fill="#0F1013" />
+              <circle cx="120" cy="120" r="80" fill="url(#gold-gradient)" opacity="0.4" />
+              <circle cx="240" cy="200" r="100" fill="#1C2435" opacity="0.5" />
+              <path
+                d="M60 280C120 230 220 230 300 300"
+                stroke="#C6A15B"
+                stroke-width="2"
+                fill="none"
+                opacity="0.5"
+              />
+              <path
+                d="M90 260C140 230 210 240 260 280"
+                stroke="#F7F7F5"
+                stroke-width="1"
+                fill="none"
+                opacity="0.2"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured" aria-labelledby="featured-title">
+        <div class="section-header">
+          <h2 id="featured-title">Featured work</h2>
+          <p>Selected builds with brand depth and operational clarity.</p>
+        </div>
+        <div class="featured-grid" id="featured-grid"></div>
+      </section>
+
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <div class="section-header">
+          <h2 id="work-title">Work</h2>
+          <p>Systems, brands, and media platforms built for longevity.</p>
+        </div>
+        <div class="work-grid" id="projects-grid"></div>
+        <div class="section-footer">
+          <a class="btn btn-ghost" href="./work/index.html">View full portfolio</a>
+        </div>
+      </section>
+
+      <section class="section extras" id="extras" aria-labelledby="extras-title">
+        <div class="section-header">
+          <h2 id="extras-title">Extras</h2>
+          <p>Writing, film, and experiments beyond the core portfolio.</p>
+        </div>
+        <div class="extras-grid" id="extras-grid"></div>
+      </section>
+
+      <section class="section media" id="media" aria-labelledby="media-title">
+        <div class="section-header">
+          <h2 id="media-title">Media</h2>
+          <p>Press, interviews, and recognition of the studio's work.</p>
+        </div>
+        <div class="media-list" id="media-list"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p>© <span id="year"></span> By MAM Studios. All rights reserved.</p>
+        <p class="footer-note">Built with care and modern craftsmanship.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:contact@bymamstudios.com">Email</a>
+        <a href="https://www.linkedin.com/in/michael-anthony-marino-40aba999">LinkedIn</a>
+      </div>
+    </footer>
+
+    <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+      <div class="modal-overlay" data-modal-close></div>
+      <div class="modal-content" role="document">
+        <button class="modal-close" type="button" aria-label="Close contact form" data-modal-close>
+          ×
+        </button>
+        <h2 id="contact-title">Start a project</h2>
+        <p>Tell us about your brand, platform, or system. We'll follow up quickly.</p>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@email.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell us about your goals." required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send inquiry</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>
