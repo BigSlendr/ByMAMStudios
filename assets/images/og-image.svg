@@ -1,0 +1,8 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0B0B0C" />
+  <rect x="80" y="80" width="1040" height="470" rx="48" fill="#111318" stroke="#2A2D34" />
+  <circle cx="300" cy="260" r="140" fill="#C6A15B" opacity="0.35" />
+  <circle cx="820" cy="360" r="180" fill="#1C2435" opacity="0.4" />
+  <text x="120" y="280" fill="#F7F7F5" font-size="72" font-family="Playfair Display, serif">By MAM Studios</text>
+  <text x="120" y="350" fill="#C6A15B" font-size="28" font-family="Inter, sans-serif">Building brands, designing systems, executing vision.</text>
+</svg>
