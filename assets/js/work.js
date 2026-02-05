@@ -5,59 +5,50 @@ const chipGroup = document.getElementById('chip-group');
 const searchInput = document.getElementById('project-search');
 const yearEl = document.getElementById('year');
 
+const filterCategories = ['All', 'Infrastructure', 'Identity', 'Digital', 'Visual', 'Commerce'];
+
 let allProjects = [];
 let activeCategory = 'All';
 
-const pickIcon = (category) => {
-  const mapping = {
-    Brand: '✺',
-    Media: '✦',
-    Operations: '⬢',
-    System: '⌘',
-    Web: '◆'
-  };
-  const key = Object.keys(mapping).find((item) => category.includes(item));
-  return mapping[key] || '✶';
-};
-
 const renderProjects = (projects) => {
   workGrid.innerHTML = projects
-    .map(
-      (project) => `
-      <a class="project-card card-reveal" href="./project.html?slug=${project.slug}">
+    .map((project) => {
+      const tagLabel = (project.tags || []).join(' · ');
+      const status = project.comingSoon ? '<span class="project-status">Coming Soon</span>' : '';
+      const cardClass = `project-card card-reveal ${project.comingSoon ? 'is-disabled' : ''}`.trim();
+      const href = project.comingSoon ? '#' : `./project.html?slug=${project.slug}`;
+      return `
+      <a class="${cardClass}" href="${href}" ${project.comingSoon ? 'aria-disabled="true" tabindex="-1"' : ''}>
         <div class="project-meta">
           <span class="tag">${project.category}</span>
-          <span class="project-icon">${pickIcon(project.category)}</span>
         </div>
         <h3>${project.name}</h3>
         <p>${project.subtitle}</p>
+        <p class="project-engagement">Engagement: ${project.engagement}</p>
+        <p class="project-tags">${tagLabel}</p>
+        ${status}
         <span class="media-arrow">→</span>
-      </a>`
-    )
+      </a>`;
+    })
     .join('');
 };
 
-const renderChips = (projects) => {
-  const categories = ['All', ...new Set(projects.map((project) => project.category.split(' ')[0]))];
-  chipGroup.innerHTML = categories
-    .map(
-      (category) => `
-      <button class="chip ${category === activeCategory ? 'is-active' : ''}" data-category="${category}">
-        ${category}
-      </button>`
-    )
-    .join('');
+const setActiveChip = () => {
+  chipGroup.querySelectorAll('.chip').forEach((chip) => {
+    chip.classList.toggle('is-active', chip.dataset.category === activeCategory);
+  });
 };
 
 const filterProjects = () => {
   const query = searchInput.value.toLowerCase();
   const filtered = allProjects.filter((project) => {
-    const matchCategory =
-      activeCategory === 'All' || project.category.startsWith(activeCategory);
+    const tags = project.tags || [];
+    const matchCategory = activeCategory === 'All' || tags.includes(activeCategory);
     const matchQuery =
       project.name.toLowerCase().includes(query) ||
       project.subtitle.toLowerCase().includes(query) ||
-      project.tags.join(' ').toLowerCase().includes(query);
+      tags.join(' ').toLowerCase().includes(query) ||
+      project.engagement.toLowerCase().includes(query);
     return matchCategory && matchQuery;
   });
   renderProjects(filtered);
@@ -83,8 +74,13 @@ const handleChipClick = (event) => {
   if (!target) {
     return;
   }
+
+  if (!filterCategories.includes(target.dataset.category)) {
+    return;
+  }
+
   activeCategory = target.dataset.category;
-  renderChips(allProjects);
+  setActiveChip();
   filterProjects();
   requestAnimationFrame(initObserver);
 };
@@ -93,7 +89,7 @@ fetch(dataUrl)
   .then((response) => response.json())
   .then((data) => {
     allProjects = data.projects;
-    renderChips(allProjects);
+    setActiveChip();
     renderProjects(allProjects);
     yearEl.textContent = new Date().getFullYear();
     requestAnimationFrame(initObserver);

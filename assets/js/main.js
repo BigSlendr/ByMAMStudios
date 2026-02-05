@@ -162,7 +162,7 @@ const renderMedia = (media) => {
 };
 
 const updateActiveLink = () => {
-  const sections = ['home', 'work', 'extras', 'media'];
+  const sections = ['capabilities', 'approach', 'about'];
   const scrollPosition = window.scrollY + 200;
   sections.forEach((sectionId) => {
     const section = document.getElementById(sectionId);
@@ -205,6 +205,9 @@ fetch(dataUrl)
   .catch(() => {
     if (featuredGrid) {
       featuredGrid.innerHTML = '<p>Unable to load featured work.</p>';
+    }
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
     }
   });
 

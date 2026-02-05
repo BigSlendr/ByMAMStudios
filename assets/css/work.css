@@ -1,0 +1,75 @@
+.selected-work-grid .project-card {
+  min-height: 240px;
+}
+
+.engagement-label {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.capabilities-list {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+  max-width: 640px;
+}
+
+.capabilities-list li {
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.metrics-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.metrics-strip div {
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  border-radius: 12px;
+  padding: 18px;
+  display: grid;
+  gap: 4px;
+}
+
+.metrics-strip strong {
+  font-size: 1.6rem;
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+.metrics-strip span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.project-engagement {
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.project-tags {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.project-card.is-disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.project-status {
+  display: inline-flex;
+  width: fit-content;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
