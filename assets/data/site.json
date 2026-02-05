@@ -1,124 +1,166 @@
 {
   "site": {
     "name": "By MAM Studios",
-    "tagline": "Building brands, designing systems, executing vision.",
-    "description": "A professional platform for Michael Marino's ventures across press infrastructure, consumer brands and operational systems.",
+    "tagline": "Digital infrastructure and brand systems for ambitious operators.",
+    "description": "An independent design office building brand systems and digital infrastructure for founders and operators.",
     "email": "contact@bymamstudios.com",
     "linkedin": "https://www.linkedin.com/in/michael-anthony-marino-40aba999",
     "domain": "bymamstudios.com"
   },
   "featured": [
     {
-      "slug": "avedon",
-      "name": "Avedon",
-      "subtitle": "Streetwear brand system",
+      "slug": "avedon-collective",
+      "name": "Avédon Collective",
+      "subtitle": "Luxury streetwear infrastructure and identity system",
       "color": "gold"
     },
     {
-      "slug": "mt-mug",
+      "slug": "mt-mug-coffee",
       "name": "MT Mug Coffee",
-      "subtitle": "Borough-inspired lifestyle coffee brand",
+      "subtitle": "Commerce-ready coffee brand platform",
       "color": "navy"
     },
     {
-      "slug": "bobby-black",
-      "name": "Bobby Black NYC",
-      "subtitle": "Operational systems for rapid ordering and menu updates",
+      "slug": "staten-news",
+      "name": "Staten News",
+      "subtitle": "Digital publishing architecture for weekly distribution",
       "color": "burgundy"
     }
   ],
   "projects": [
     {
-      "slug": "avedon",
-      "name": "Avedon",
-      "subtitle": "Streetwear brand system with an elevated, modern edge.",
-      "category": "Brand + Commerce",
-      "tags": ["Brand Strategy", "Design Direction", "Product Concepts"],
-      "role": "Brand Founder / Creative Director",
+      "slug": "avedon-collective",
+      "name": "Avédon Collective",
+      "subtitle": "Luxury streetwear system engineered for product, identity, and launch velocity.",
+      "category": "Infrastructure + Identity",
+      "tags": ["Infrastructure", "Identity", "Visual", "Commerce"],
+      "engagement": "Founding Architect",
       "year": "2025–2026",
-      "problem": "Develop a distinctive streetwear identity that feels bold and scalable across multiple product categories.",
+      "problem": [
+        "Build a cohesive luxury streetwear platform that could support ongoing capsule launches.",
+        "Establish a visual and operational framework that remains consistent across product lines."
+      ],
       "approach": [
-        "Defined the brand personality and visual rules.",
-        "Developed sub-brand architecture for future expansion.",
-        "Created repeatable design guidelines for apparel-ready outputs."
+        "Structured the parent architecture and product naming system.",
+        "Defined core visual language, typography behavior, and campaign standards.",
+        "Mapped launch sequences for seasonal drops and commerce touchpoints."
       ],
       "execution": [
-        "Brand identity systems",
-        "Apparel graphics design direction",
-        "Naming and sub-brand hierarchy"
+        "Brand architecture and identity system",
+        "Visual direction for apparel and campaign assets",
+        "Commerce-ready launch framework"
       ],
-      "outcome": "A foundation ready to scale from designs to a structured brand ecosystem with consistent identity and product direction.",
-      "metrics": ["Consistency system", "Scalable templates"],
-      "links": [{ "label": "Visit Avedon", "href": "https://avedonco.com" }]
+      "outcome": [
+        "A scalable brand system that supports premium positioning and repeatable launches.",
+        "A clearer product hierarchy that accelerates design and release cycles."
+      ],
+      "metrics": ["3 launch frameworks established", "Unified identity across all brand surfaces"],
+      "links": [{ "label": "Visit Avédon", "href": "https://avedonco.com" }]
     },
     {
-      "slug": "mt-mug",
+      "slug": "mt-mug-coffee",
       "name": "MT Mug Coffee",
-      "subtitle": "Borough-inspired lifestyle coffee brand.",
-      "category": "Brand + Web",
-      "tags": ["Brand Story", "Web UX", "Packaging"],
-      "role": "Co-Builder / Strategy + Web Direction",
+      "subtitle": "Borough-rooted coffee brand built for recurring commerce and lifestyle expansion.",
+      "category": "Commerce + Identity",
+      "tags": ["Infrastructure", "Identity", "Digital", "Commerce"],
+      "engagement": "Co-Founding Partner",
       "year": "2025–2026",
-      "problem": "Create a visually attractive, easy-to-use brand experience that feels local, ritual-driven and built for growth.",
+      "problem": [
+        "Create a credible coffee identity that could convert first-time visitors into returning customers.",
+        "Align packaging, web UX, and brand messaging into a single system."
+      ],
       "approach": [
-        "Positioned the brand around borough identity and daily ritual.",
-        "Planned web UX improvements emphasizing clarity, trust and conversion.",
-        "Outlined SEO/meta structure for discoverability."
+        "Positioned the brand around borough narrative and ritual-based consumption.",
+        "Designed digital customer journeys around clarity, speed, and trust.",
+        "Defined metadata and launch sequencing for organic discoverability."
       ],
       "execution": [
-        "Homepage UX direction",
-        "Metadata/SEO strategy",
-        "Visual motifs for packaging and lifestyle imagery"
+        "Identity and voice framework",
+        "Commerce UX direction",
+        "Packaging and digital visual system"
       ],
-      "outcome": "A clear blueprint for a high-conversion, brand-forward coffee site experience with scalable visual structure.",
-      "metrics": ["Clarity-first UX", "Brand cohesion"],
+      "outcome": [
+        "A tightly integrated brand and commerce stack with improved conversion readiness.",
+        "A repeatable visual system for product storytelling and retention campaigns."
+      ],
+      "metrics": ["Conversion-focused site architecture", "Cross-channel identity consistency"],
       "links": [{ "label": "Visit MT Mug", "href": "https://mtmug.com" }]
-    },
-    {
-      "slug": "bobby-black",
-      "name": "Bobby Black NYC",
-      "subtitle": "Order intake and menu update workflows built for speed.",
-      "category": "Operations + Systems",
-      "tags": ["Operational Systems", "Menu Management", "Order Flow"],
-      "role": "Systems Builder",
-      "year": "2025–2026",
-      "problem": "Enable simple order submissions and rapid menu updates without heavy tooling.",
-      "approach": [
-        "Designed low-friction order submission routes (email-based).",
-        "Created an update process for menu changes with clear diffs.",
-        "Prioritized operational simplicity and reliability."
-      ],
-      "execution": [
-        "Email-based order intake structure",
-        "Menu change tracking process",
-        "Website integration plan"
-      ],
-      "outcome": "A lightweight operational approach that keeps ordering and updates fast, simple and scalable.",
-      "metrics": ["Reduced friction", "Faster updates"],
-      "links": [{ "label": "Visit Bobby Black NYC", "href": "https://bobbyblacknyc.com" }]
     },
     {
       "slug": "staten-news",
       "name": "Staten News",
-      "subtitle": "Newsletter brand spanning tech, finance, and sports.",
-      "category": "Media + Publishing",
-      "tags": ["Editorial Identity", "Content System", "Publishing Workflow"],
-      "role": "Creator / Editor",
+      "subtitle": "Modern editorial platform structured for consistent publishing across sectors.",
+      "category": "Digital + Visual",
+      "tags": ["Infrastructure", "Digital", "Visual"],
+      "engagement": "Founding Publisher",
       "year": "2025–2026",
-      "problem": "Build a consistent editorial identity with repeatable weekly formats and strong brand voice.",
+      "problem": [
+        "Launch a media property that balances speed of publication with editorial consistency.",
+        "Create modular systems for stories spanning technology, finance, and culture."
+      ],
       "approach": [
-        "Defined recurring series structures and publishing rhythm.",
-        "Built content grouping approach for repeatability across categories.",
-        "Created a brand persona to keep the tone memorable."
+        "Built repeatable editorial frameworks for weekly publishing.",
+        "Defined tone, layout standards, and distribution cadence.",
+        "Established production workflows to reduce bottlenecks."
       ],
       "execution": [
-        "Recurring content architecture",
-        "Brand voice + editorial framing",
-        "Publishing process organization"
+        "Editorial identity system",
+        "Content operations design",
+        "Digital publishing framework"
       ],
-      "outcome": "A repeatable media system that supports consistent output and strengthens the brand as a trusted voice over time.",
-      "metrics": ["Repeatable format", "Consistent cadence"],
+      "outcome": [
+        "A stable publishing platform with consistent release cadence.",
+        "Higher content clarity and brand recognition across weekly editions."
+      ],
+      "metrics": ["Weekly cadence stabilized", "Multi-vertical format system deployed"],
       "links": [{ "label": "Visit Staten News", "href": "https://statennews.com" }]
+    },
+    {
+      "slug": "bobby-black-nyc",
+      "name": "Bobby Black NYC",
+      "subtitle": "Operational order and menu infrastructure for a fast-moving food brand.",
+      "category": "Infrastructure + Commerce",
+      "tags": ["Infrastructure", "Digital", "Commerce"],
+      "engagement": "Commissioner & Founding Architect",
+      "year": "2025–2026",
+      "problem": [
+        "Reduce friction across ordering and menu updates without introducing heavy tooling.",
+        "Support fast changes in a high-velocity menu environment."
+      ],
+      "approach": [
+        "Mapped lightweight order-intake routes and communication loops.",
+        "Created a transparent process for menu revisions and deployment.",
+        "Prioritized reliability and speed for operators."
+      ],
+      "execution": [
+        "Order intake workflow design",
+        "Menu revision protocol",
+        "Digital integration planning"
+      ],
+      "outcome": [
+        "Faster operational cycles and cleaner customer ordering flow.",
+        "Lower overhead for ongoing menu and fulfillment changes."
+      ],
+      "metrics": ["Faster menu turnaround", "Reduced ordering friction"],
+      "links": [{ "label": "Visit Bobby Black NYC", "href": "https://bobbyblacknyc.com" }]
+    },
+    {
+      "slug": "avedon-atelier",
+      "name": "Avédon Atelier",
+      "subtitle": "Upcoming atelier line extending Avédon into bespoke visual and product narratives.",
+      "category": "Identity + Visual",
+      "tags": ["Identity", "Visual", "Commerce"],
+      "engagement": "Founding Architect",
+      "year": "2026",
+      "problem": [
+        "Develop a premium extension that preserves Avédon coherence while introducing a bespoke tier."
+      ],
+      "approach": ["In progress"],
+      "execution": ["In progress"],
+      "outcome": ["In progress"],
+      "metrics": ["Coming soon"],
+      "links": [],
+      "comingSoon": true
     }
   ],
   "extras": [
@@ -128,8 +170,8 @@
       "href": "#"
     },
     {
-      "title": "Video: Behind the Brand — <a href=\"https://avedonco.com\" target=\"_blank\" rel=\"noreferrer\">Avedon</a>",
-      "desc": "An inside look at the creative and operational process behind <a href=\"https://avedonco.com\" target=\"_blank\" rel=\"noreferrer\">Avedon</a>'s streetwear system.",
+      "title": "Video: Behind the Brand — <a href=\"https://avedonco.com\" target=\"_blank\" rel=\"noreferrer\">Avédon</a>",
+      "desc": "An inside look at the creative and operational process behind <a href=\"https://avedonco.com\" target=\"_blank\" rel=\"noreferrer\">Avédon</a>'s brand system.",
       "href": "#"
     },
     {
@@ -140,8 +182,8 @@
   ],
   "media": [
     {
-      "title": "Feature: <a href=\"https://avedonco.com\" target=\"_blank\" rel=\"noreferrer\">Avedon</a> in The New York Times",
-      "desc": "A feature on the rise of the <a href=\"https://avedonco.com\" target=\"_blank\" rel=\"noreferrer\">Avedon</a> collection in modern streetwear.",
+      "title": "Feature: <a href=\"https://avedonco.com\" target=\"_blank\" rel=\"noreferrer\">Avédon</a> in The New York Times",
+      "desc": "A feature on the rise of the <a href=\"https://avedonco.com\" target=\"_blank\" rel=\"noreferrer\">Avédon</a> collection in modern streetwear.",
       "href": "#"
     },
     {

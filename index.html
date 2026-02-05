@@ -19,6 +19,7 @@
     <meta property="og:url" content="https://bymamstudios.com/" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/work.css" />
     <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
     <script type="application/ld+json">
       {
@@ -51,10 +52,10 @@
           <span class="nav-toggle-bar"></span>
         </button>
         <div class="nav-links" id="nav-links">
-          <a href="#home" class="nav-link is-active">Home</a>
-          <a href="#work" class="nav-link">Work</a>
-          <a href="#extras" class="nav-link">Extras</a>
-          <a href="#media" class="nav-link">Media</a>
+          <a href="./work/index.html" class="nav-link">Work</a>
+          <a href="#capabilities" class="nav-link">Capabilities</a>
+          <a href="#approach" class="nav-link">Approach</a>
+          <a href="#about" class="nav-link">About</a>
           <button class="nav-link nav-contact" type="button" data-modal-open>
             Contact
           </button>
@@ -67,16 +68,14 @@
         <div class="hero-inner">
           <div class="hero-copy">
             <p class="eyebrow">By MAM Studios</p>
-            <h1 id="hero-title">
-              Building brands. Designing systems. Executing vision.
-            </h1>
+            <h1 id="hero-title">Digital Infrastructure &amp; Brand Systems.</h1>
             <p class="hero-subtext">
-              By MAM Studios showcases selected builds across media, commerce and
-              technology — designed with an institutional, premium approach.
+              ByMAM Studio partners with founders and operators to architect credible brands,
+              platforms, and visual systems designed for scale.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#work">Explore work</a>
-              <a class="btn btn-ghost" href="./work/index.html">Full portfolio</a>
+              <a class="btn btn-primary" href="./work/index.html">View Work</a>
+              <button class="btn btn-ghost" type="button" data-modal-open>Contact</button>
             </div>
           </div>
           <div class="hero-visual" aria-hidden="true">
@@ -109,39 +108,85 @@
         </div>
       </section>
 
-      <section class="section featured" aria-labelledby="featured-title">
+      <section class="section" id="selected-work" aria-labelledby="selected-work-title">
         <div class="section-header">
-          <h2 id="featured-title">Featured work</h2>
-          <p>Selected builds with brand depth and operational clarity.</p>
+          <h2 id="selected-work-title">Selected Work</h2>
+          <p>Flagship engagements across infrastructure, identity, and digital platforms.</p>
         </div>
-        <div class="featured-grid" id="featured-grid"></div>
+        <div class="work-grid selected-work-grid">
+          <a class="project-card card-reveal" href="./work/project.html?slug=avedon-collective">
+            <div class="project-meta">
+              <span class="tag">Infrastructure · Identity · Visual</span>
+            </div>
+            <h3>Avédon Collective</h3>
+            <p>Brand and product system architected for premium commerce growth.</p>
+            <p class="engagement-label">Engagement: Founding Architect</p>
+            <span class="media-arrow">→</span>
+          </a>
+          <a class="project-card card-reveal" href="./work/project.html?slug=mt-mug-coffee">
+            <div class="project-meta">
+              <span class="tag">Infrastructure · Identity · Commerce</span>
+            </div>
+            <h3>MT Mug Coffee</h3>
+            <p>Digital and physical brand platform structured for recurring demand.</p>
+            <p class="engagement-label">Engagement: Co-Founding Partner</p>
+            <span class="media-arrow">→</span>
+          </a>
+          <a class="project-card card-reveal" href="./work/project.html?slug=staten-news">
+            <div class="project-meta">
+              <span class="tag">Digital · Visual · Infrastructure</span>
+            </div>
+            <h3>Staten News</h3>
+            <p>Editorial platform and publishing system designed for sustained output.</p>
+            <p class="engagement-label">Engagement: Founding Publisher</p>
+            <span class="media-arrow">→</span>
+          </a>
+        </div>
       </section>
 
-      <section class="section work" id="work" aria-labelledby="work-title">
+      <section class="section" id="capabilities" aria-labelledby="capabilities-title">
         <div class="section-header">
-          <h2 id="work-title">Work</h2>
-          <p>Systems, brands, and media platforms built for longevity.</p>
+          <h2 id="capabilities-title">Capabilities</h2>
         </div>
-        <div class="work-grid" id="projects-grid"></div>
-        <div class="section-footer">
-          <a class="btn btn-ghost" href="./work/index.html">View full portfolio</a>
+        <ul class="capabilities-list">
+          <li>Infrastructure Architecture</li>
+          <li>Brand Identity Systems</li>
+          <li>Digital Platform Design</li>
+          <li>Commerce Enablement</li>
+          <li>Creative Direction</li>
+        </ul>
+      </section>
+
+      <section class="section" id="approach" aria-labelledby="approach-title">
+        <div class="section-header">
+          <h2 id="approach-title">Approach</h2>
+        </div>
+        <div class="metrics-strip">
+          <div>
+            <strong>18+</strong>
+            <span>Brands Developed</span>
+          </div>
+          <div>
+            <strong>12</strong>
+            <span>Platforms Launched</span>
+          </div>
+          <div>
+            <strong>25+</strong>
+            <span>Identity Systems Created</span>
+          </div>
         </div>
       </section>
 
-      <section class="section extras" id="extras" aria-labelledby="extras-title">
+      <section class="section" id="about" aria-labelledby="about-title">
         <div class="section-header">
-          <h2 id="extras-title">Extras</h2>
-          <p>Writing, film, and experiments beyond the core portfolio.</p>
+          <h2 id="about-title">About</h2>
+          <p>
+            ByMAM Studio is an independent design office focused on brand systems and digital
+            infrastructure. Led by Michael Marino, the studio partners selectively with founders and
+            operators building credible category-defining companies. Each engagement is structured
+            for clarity, speed, and long-term brand equity.
+          </p>
         </div>
-        <div class="extras-grid" id="extras-grid"></div>
-      </section>
-
-      <section class="section media" id="media" aria-labelledby="media-title">
-        <div class="section-header">
-          <h2 id="media-title">Media</h2>
-          <p>Press, interviews, and recognition of the studio's work.</p>
-        </div>
-        <div class="media-list" id="media-list"></div>
       </section>
     </main>
 

@@ -11,6 +11,7 @@
     />
     <link rel="canonical" href="https://bymamstudios.com/work/" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/work.css" />
   </head>
   <body>
     <div class="page-gradient" aria-hidden="true"></div>
@@ -18,10 +19,11 @@
       <nav class="nav" aria-label="Primary">
         <a class="logo" href="../index.html">By MAM Studios</a>
         <div class="nav-links">
-          <a href="../index.html#home" class="nav-link">Home</a>
-          <a href="../index.html#work" class="nav-link">Work</a>
-          <a href="../index.html#extras" class="nav-link">Extras</a>
-          <a href="../index.html#media" class="nav-link">Media</a>
+          <a href="./index.html" class="nav-link">Work</a>
+          <a href="../index.html#capabilities" class="nav-link">Capabilities</a>
+          <a href="../index.html#approach" class="nav-link">Approach</a>
+          <a href="../index.html#about" class="nav-link">About</a>
+          <a href="../index.html#contact-modal" class="nav-link">Contact</a>
         </div>
       </nav>
     </header>
@@ -29,10 +31,17 @@
     <main class="section">
       <div class="section-header">
         <h1 class="work-title">Portfolio</h1>
-        <p>Filter by category or search to explore the full By MAM Studios archive.</p>
+        <p>Filter by category or search to explore current By MAM Studio engagements.</p>
       </div>
-      <input class="search-input" type="search" id="project-search" placeholder="Search projects" />
-      <div class="chip-group" id="chip-group"></div>
+      <input class="search-input" type="search" id="project-search" placeholder="Search projects..." />
+      <div class="chip-group" id="chip-group">
+        <button class="chip is-active" data-category="All">All</button>
+        <button class="chip" data-category="Infrastructure">Infrastructure</button>
+        <button class="chip" data-category="Identity">Identity</button>
+        <button class="chip" data-category="Digital">Digital</button>
+        <button class="chip" data-category="Visual">Visual</button>
+        <button class="chip" data-category="Commerce">Commerce</button>
+      </div>
       <div class="work-grid" id="work-grid"></div>
     </main>
 
