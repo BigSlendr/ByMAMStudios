@@ -215,10 +215,9 @@ a:hover,
 }
 
 .hero-logo {
-  width: clamp(220px, 28vw, 360px);
+  width: clamp(240px, 30vw, 420px);
   height: auto;
   display: block;
-  object-fit: contain;
 }
 
 .btn {
