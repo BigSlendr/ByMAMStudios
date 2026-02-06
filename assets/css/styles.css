@@ -363,6 +363,97 @@ a:hover,
   color: var(--accent);
 }
 
+
+.project-carousel {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.carousel-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(280px, calc((100% - 48px) / 3));
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 8px;
+}
+
+.project-carousel-card {
+  scroll-snap-align: start;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  box-shadow: 0 8px 22px rgba(11, 15, 20, 0.04);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.project-carousel-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.project-carousel-content {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+}
+
+.project-carousel-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+}
+
+.project-carousel-content p {
+  color: var(--text-muted);
+}
+
+.project-carousel-content a {
+  width: fit-content;
+  color: var(--bymam-ink);
+  font-weight: 500;
+}
+
+.project-carousel-content a:focus-visible,
+.carousel-arrow:focus-visible,
+.carousel-track:focus-visible,
+.project-carousel-card:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.project-carousel-card:hover,
+.project-carousel-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px var(--shadow);
+}
+
+.carousel-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(11, 15, 20, 0.08);
+}
+
+.carousel-arrow:hover {
+  box-shadow: 0 12px 22px rgba(11, 15, 20, 0.14);
+}
+
 .section-footer {
   margin-top: 32px;
 }
@@ -595,6 +686,27 @@ a:hover,
 
   .project-meta-panel {
     position: static;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .carousel-track {
+    grid-auto-columns: minmax(280px, calc((100% - 24px) / 2));
+  }
+}
+
+@media (max-width: 720px) {
+  .project-carousel {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-track {
+    grid-auto-columns: 100%;
+  }
+
+  .carousel-arrow {
+    display: none;
   }
 }
 

@@ -12,6 +12,11 @@ const modal = document.getElementById('contact-modal');
 const modalOpenButtons = document.querySelectorAll('[data-modal-open]');
 const modalCloseButtons = document.querySelectorAll('[data-modal-close]');
 
+const projectCarousel = document.querySelector('[data-project-carousel]');
+const carouselTrack = projectCarousel?.querySelector('.carousel-track');
+const carouselPrev = projectCarousel?.querySelector('[data-carousel-prev]');
+const carouselNext = projectCarousel?.querySelector('[data-carousel-next]');
+
 const focusableSelectors =
   'a[href], button:not([disabled]), textarea, input, select, [tabindex="0"]';
 let lastFocusedElement = null;
@@ -161,6 +166,32 @@ const renderMedia = (media) => {
     .join('');
 };
 
+
+const scrollCarouselByCard = (direction = 1) => {
+  if (!carouselTrack) {
+    return;
+  }
+  const card = carouselTrack.querySelector('.project-carousel-card');
+  const cardWidth = card ? card.getBoundingClientRect().width : 320;
+  const styles = window.getComputedStyle(carouselTrack);
+  const gap = Number.parseFloat(styles.columnGap || styles.gap || '24') || 24;
+  carouselTrack.scrollBy({ left: direction * (cardWidth + gap), behavior: 'smooth' });
+};
+
+const handleCarouselKeydown = (event) => {
+  if (!carouselTrack) {
+    return;
+  }
+  if (event.key === 'ArrowLeft') {
+    event.preventDefault();
+    scrollCarouselByCard(-1);
+  }
+  if (event.key === 'ArrowRight') {
+    event.preventDefault();
+    scrollCarouselByCard(1);
+  }
+};
+
 const updateActiveLink = () => {
   const sections = ['capabilities', 'approach', 'about'];
   const scrollPosition = window.scrollY + 200;
@@ -222,3 +253,10 @@ if (navToggle) {
 modalOpenButtons.forEach((button) => button.addEventListener('click', openModal));
 modalCloseButtons.forEach((button) => button.addEventListener('click', closeModal));
 window.addEventListener('keydown', handleKeydown);
+
+
+if (carouselPrev && carouselNext && carouselTrack) {
+  carouselPrev.addEventListener('click', () => scrollCarouselByCard(-1));
+  carouselNext.addEventListener('click', () => scrollCarouselByCard(1));
+  carouselTrack.addEventListener('keydown', handleCarouselKeydown);
+}
