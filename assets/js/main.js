@@ -193,7 +193,7 @@ const handleCarouselKeydown = (event) => {
 };
 
 const updateActiveLink = () => {
-  const sections = ['capabilities', 'approach', 'about'];
+  const sections = ['capabilities', 'approach', 'pricing', 'about'];
   const scrollPosition = window.scrollY + 200;
   sections.forEach((sectionId) => {
     const section = document.getElementById(sectionId);
