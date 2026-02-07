@@ -1,4 +1,4 @@
-const dataUrl = './assets/data/site.json';
+const dataUrl = '/assets/data/site.json';
 
 const featuredGrid = document.getElementById('featured-grid');
 const projectsGrid = document.getElementById('projects-grid');
@@ -42,6 +42,9 @@ const toggleNav = () => {
 };
 
 const openModal = () => {
+  if (!modal) {
+    return;
+  }
   lastFocusedElement = document.activeElement;
   modal.classList.add('is-open');
   modal.setAttribute('aria-hidden', 'false');
@@ -53,6 +56,9 @@ const openModal = () => {
 };
 
 const closeModal = () => {
+  if (!modal) {
+    return;
+  }
   modal.classList.remove('is-open');
   modal.setAttribute('aria-hidden', 'true');
   if (lastFocusedElement) {
@@ -62,6 +68,9 @@ const closeModal = () => {
 };
 
 const handleKeydown = (event) => {
+  if (!modal) {
+    return;
+  }
   if (event.key === 'Escape' && modal.classList.contains('is-open')) {
     closeModal();
   }
