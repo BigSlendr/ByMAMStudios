@@ -5,7 +5,7 @@
 }
 
 .authority-hero .eyebrow {
-  color: var(--accent);
+  color: var(--color-sand);
 }
 
 .authority-hero h1 {
@@ -17,7 +17,7 @@
 
 .authority-hero p {
   max-width: 70ch;
-  color: rgba(246, 242, 234, 0.82);
+  color: rgba(244, 246, 248, 0.84);
 }
 
 .authority-hero .btn {
@@ -42,7 +42,7 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
-  box-shadow: 0 18px 45px var(--shadow);
+  box-shadow: var(--shadow-soft);
   display: grid;
   gap: 12px;
 }
@@ -78,7 +78,7 @@
 }
 
 .jump-nav {
-  background: var(--bg-muted);
+  background: var(--color-surface-2);
   padding: 20px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
@@ -91,8 +91,8 @@
 }
 
 .definition-block {
-  background: var(--bg-muted);
-  border-left: 4px solid var(--accent);
+  background: var(--color-surface-2);
+  border-left: 4px solid var(--color-sand);
   padding: 20px 22px;
   border-radius: 12px;
   color: var(--text);
@@ -165,7 +165,7 @@
 
 .service-pillars li {
   list-style: none;
-  background: var(--bg-muted);
+  background: var(--color-surface-2);
   border-radius: 14px;
   padding: 14px 16px;
   border: 1px solid var(--border);
@@ -181,7 +181,7 @@
 }
 
 .cta-banner p {
-  color: rgba(246, 242, 234, 0.8);
+  color: rgba(244, 246, 248, 0.82);
 }
 
 .cta-actions {
