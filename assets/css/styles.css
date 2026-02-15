@@ -968,3 +968,113 @@ summary:focus-visible,
     animation-duration: 0s !important;
   }
 }
+
+.capabilities-cta {
+  margin-top: 24px;
+}
+
+.capabilities-deck-page {
+  background: #0f1724;
+  color: var(--bymam-offwhite);
+}
+
+.capabilities-deck-page .section-header h2,
+.capabilities-deck-page h3,
+.capabilities-deck-page h4,
+.capabilities-deck-page .pricing-subheader h3 {
+  color: var(--bymam-offwhite);
+}
+
+.capabilities-deck-page .section-header p,
+.capabilities-deck-page p,
+.capabilities-deck-page li {
+  color: rgba(244, 246, 248, 0.8);
+}
+
+.capability-secondary-btn {
+  border-color: rgba(214, 199, 161, 0.55);
+  color: var(--bymam-offwhite);
+}
+
+.capability-secondary-btn:hover {
+  background: rgba(214, 199, 161, 0.12);
+}
+
+.capability-grid {
+  background: #121d2d;
+}
+
+.capability-card {
+  border: 1px solid rgba(196, 98, 45, 0.25);
+  border-radius: var(--radius);
+  padding: 28px;
+  background: rgba(14, 26, 43, 0.72);
+  box-shadow: 0 14px 32px rgba(2, 6, 12, 0.35);
+  margin-bottom: 24px;
+}
+
+.capability-card h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.capability-card h4 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-sand);
+}
+
+.capability-card ul {
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+}
+
+.best-for {
+  margin-top: 16px;
+  border-left: 3px solid var(--color-accent-orange);
+  padding-left: 12px;
+}
+
+.process-section {
+  background: #0f1724;
+  border-top: 1px solid rgba(196, 98, 45, 0.2);
+  border-bottom: 1px solid rgba(196, 98, 45, 0.2);
+}
+
+.process-steps {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+  counter-reset: process;
+}
+
+.process-steps li {
+  counter-increment: process;
+  padding: 16px 20px;
+  border: 1px solid rgba(214, 199, 161, 0.3);
+  border-radius: 12px;
+  background: rgba(14, 26, 43, 0.72);
+}
+
+.process-steps li::before {
+  content: counter(process);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 12px;
+  background: var(--color-accent-orange);
+  color: #fff;
+  font-weight: 600;
+}
+
+.capability-final-cta {
+  background: linear-gradient(140deg, rgba(14, 26, 43, 0.95), rgba(25, 36, 55, 0.9));
+}
