@@ -270,12 +270,13 @@ summary:focus-visible,
 
 .btn-primary {
   background: var(--color-button-primary-bg);
-  color: var(--color-button-primary-text);
+  color: #ffffff;
   font-weight: 600;
   box-shadow: 0 10px 24px rgba(196, 98, 45, 0.26);
 }
 
 .btn-primary:hover {
+  color: #ffffff;
   transform: translateY(-2px);
   background: #ad4e1f;
   box-shadow: 0 12px 28px rgba(173, 78, 31, 0.3);
