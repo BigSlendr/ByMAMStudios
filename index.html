@@ -243,6 +243,38 @@
         </div>
       </section>
 
+      <section class="section" id="service-modernization" aria-labelledby="service-modernization-title">
+        <div class="section-header">
+          <h2 id="service-modernization-title">Modern Service Websites That Convert</h2>
+          <p>
+            Most local service sites act like brochures. I rebuild them into conversion systems
+            that create trust, filter better leads, and help you close higher-value jobs.
+          </p>
+        </div>
+        <div class="service-modernization-grid">
+          <article class="authority-card card-reveal">
+            <h3>Structural Clarity</h3>
+            <p>Service pages, mobile-first layout, fast load.</p>
+          </article>
+          <article class="authority-card card-reveal">
+            <h3>Pricing Intelligence</h3>
+            <p>Starting-at pricing, ranges, packages—without locking you in.</p>
+          </article>
+          <article class="authority-card card-reveal">
+            <h3>Authority Positioning</h3>
+            <p>Reviews, proof, process, before/after.</p>
+          </article>
+          <article class="authority-card card-reveal">
+            <h3>Lead Qualification Engine</h3>
+            <p>Smart quote forms with timeline/budget + routing.</p>
+          </article>
+        </div>
+        <div class="hero-actions section-footer">
+          <a class="btn btn-primary" href="/contact/?intent=modernization">Request a Modernization Audit</a>
+          <a class="btn btn-ghost" href="/service-websites/">See the Framework</a>
+        </div>
+      </section>
+
       <section class="section" id="approach" aria-labelledby="approach-title">
         <div class="section-header">
           <h2 id="approach-title">Approach</h2>
@@ -508,6 +540,8 @@
         <a href="./insights/index.html">Insights</a>
         <a href="./about-the-founder/index.html">Founder</a>
         <a href="./capabilities-deck/index.html">Capabilities Deck</a>
+        <a href="/service-websites/">Service Websites</a>
+        <a href="/contact/?intent=modernization">Modernization Audit</a>
         <a href="mailto:contact@bymamstudios.com">Email</a>
         <a href="https://www.linkedin.com/in/michael-anthony-marino-40aba999">LinkedIn</a>
       </div>
@@ -530,6 +564,51 @@
             Email
             <input type="email" name="email" placeholder="you@email.com" required />
           </label>
+          <label>
+            What are you looking for?
+            <select name="intent" data-intent-select required>
+              <option value="">Select one</option>
+              <option value="modernization">Service Website Modernization (Audit)</option>
+              <option value="new-build">New Website Build</option>
+              <option value="branding-design">Branding / Design</option>
+              <option value="automation-systems">Automation / Systems</option>
+            </select>
+          </label>
+          <div class="modernization-fields" data-modernization-fields hidden>
+            <label>
+              Business Type
+              <select name="business-type">
+                <option value="">Select one</option>
+                <option value="plumbing">Plumbing</option>
+                <option value="electrical">Electrical</option>
+                <option value="landscaping">Landscaping</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="auto">Auto</option>
+                <option value="hvac">HVAC</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <label>
+              Timeline
+              <select name="timeline">
+                <option value="">Select one</option>
+                <option value="asap">ASAP</option>
+                <option value="2-4-weeks">2–4 weeks</option>
+                <option value="1-2-months">1–2 months</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </label>
+            <label>
+              Budget Range
+              <select name="budget-range">
+                <option value="">Select one</option>
+                <option value="under-1k">Under $1k</option>
+                <option value="1-3k">$1–3k</option>
+                <option value="3-7k">$3–7k</option>
+                <option value="7k-plus">$7k+</option>
+              </select>
+            </label>
+          </div>
           <label>
             Message
             <textarea name="message" rows="4" placeholder="Tell us about your goals." required></textarea>

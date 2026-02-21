@@ -838,6 +838,7 @@ summary:focus-visible,
 
 .contact-form input,
 .contact-form textarea,
+.contact-form select,
 .search-input {
   background: var(--bg);
   border: 1px solid var(--border);
@@ -849,9 +850,56 @@ summary:focus-visible,
 
 .contact-form input:focus,
 .contact-form textarea:focus,
+.contact-form select:focus,
 .search-input:focus {
   outline: none;
   box-shadow: var(--focus-ring);
+}
+
+
+
+.modernization-fields {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(196, 98, 45, 0.3);
+  background: rgba(196, 98, 45, 0.06);
+}
+
+.service-modernization-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.service-layer-card {
+  position: relative;
+}
+
+.service-layer-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-accent-orange);
+}
+
+.service-package-list {
+  list-style: disc;
+  padding-left: 18px;
+  color: var(--text-muted);
+  display: grid;
+  gap: 8px;
+}
+
+.contact-form-page {
+  margin-top: 28px;
+  max-width: 640px;
 }
 
 .chip-group {
@@ -939,6 +987,11 @@ summary:focus-visible,
 }
 
 @media (max-width: 720px) {
+
+  .service-modernization-grid {
+    grid-template-columns: 1fr;
+  }
+
   .project-carousel {
     grid-template-columns: 1fr;
   }
