@@ -232,6 +232,37 @@ const initObserver = () => {
   document.querySelectorAll('.card-reveal').forEach((el) => observer.observe(el));
 };
 
+
+const initContactIntentForms = () => {
+  const forms = document.querySelectorAll('.contact-form');
+  if (!forms.length) {
+    return;
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  const hasModernizationIntent = params.get('intent') === 'modernization';
+
+  forms.forEach((form) => {
+    const intentSelect = form.querySelector('[data-intent-select]');
+    const modernizationFields = form.querySelector('[data-modernization-fields]');
+    if (!intentSelect || !modernizationFields) {
+      return;
+    }
+
+    const updateModernizationFields = () => {
+      const isModernization = intentSelect.value === 'modernization';
+      modernizationFields.hidden = !isModernization;
+    };
+
+    if (hasModernizationIntent) {
+      intentSelect.value = 'modernization';
+    }
+
+    updateModernizationFields();
+    intentSelect.addEventListener('change', updateModernizationFields);
+  });
+};
+
 fetch(dataUrl)
   .then((response) => response.json())
   .then((data) => {
@@ -254,6 +285,7 @@ fetch(dataUrl)
 navLinkItems.forEach((link) => link.addEventListener('click', scrollToSection));
 window.addEventListener('scroll', updateActiveLink);
 window.addEventListener('load', updateActiveLink);
+initContactIntentForms();
 
 if (navToggle) {
   navToggle.addEventListener('click', toggleNav);
