@@ -263,6 +263,46 @@ const initContactIntentForms = () => {
   });
 };
 
+const initFormspree = () => {
+  const forms = document.querySelectorAll('.contact-form');
+  if (!forms.length) return;
+
+  forms.forEach((form) => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const submitBtn = form.querySelector('[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending…';
+      submitBtn.disabled = true;
+
+      const data = new FormData(form);
+
+      try {
+        const res = await fetch('https://formspree.io/f/mqngwwee', {
+          method: 'POST',
+          body: data,
+          headers: { Accept: 'application/json' },
+        });
+
+        if (res.ok) {
+          form.innerHTML = `
+            <div style="text-align:center; padding: 2rem 0;">
+              <p style="font-size:1.1rem; font-weight:600; color: var(--color-text, #fff);">Message received.</p>
+              <p style="opacity:0.7; margin-top:0.5rem; color: var(--color-text, #fff);">We'll follow up within 1–2 business days.</p>
+            </div>`;
+        } else {
+          throw new Error('Formspree error');
+        }
+      } catch {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+        alert('Something went wrong. Please email contact@bymamstudios.com directly.');
+      }
+    });
+  });
+};
+
 fetch(dataUrl)
   .then((response) => response.json())
   .then((data) => {
@@ -286,6 +326,7 @@ navLinkItems.forEach((link) => link.addEventListener('click', scrollToSection));
 window.addEventListener('scroll', updateActiveLink);
 window.addEventListener('load', updateActiveLink);
 initContactIntentForms();
+initFormspree();
 
 if (navToggle) {
   navToggle.addEventListener('click', toggleNav);
