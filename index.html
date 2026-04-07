@@ -335,7 +335,7 @@
             <div class="pricing-card-header">
               <div>
                 <p class="pricing-tier">Launch (Foundation)</p>
-                <h3 class="pricing-price">$2,500–$4,000</h3>
+                <h3 class="pricing-price">Custom Pricing</h3>
                 <p class="pricing-best">Best for: Startups, creators, small businesses</p>
               </div>
             </div>
@@ -349,15 +349,15 @@
             </ul>
             <p class="pricing-timeline">Timeline: 2–4 weeks</p>
             <div class="pricing-actions">
-              <a class="btn btn-primary" href="#contact" data-modal-open>Book a Call</a>
-              <a class="btn btn-ghost" href="#contact" data-modal-open>Get a Quote</a>
+              <a class="btn btn-primary" href="#contact" data-modal-open>Book a Discovery Call</a>
+              <a class="btn btn-ghost" href="#contact" data-modal-open>See What's Included</a>
             </div>
           </article>
           <article class="pricing-card pricing-card-popular card-reveal">
             <div class="pricing-card-header">
               <div>
                 <p class="pricing-tier">Build (Growth)</p>
-                <h3 class="pricing-price">$5,000–$8,500</h3>
+                <h3 class="pricing-price">Custom Pricing</h3>
                 <p class="pricing-best">Best for: Growing brands, professional services</p>
               </div>
               <span class="pricing-badge">Most Popular</span>
@@ -373,15 +373,15 @@
             </ul>
             <p class="pricing-timeline">Timeline: 4–6 weeks</p>
             <div class="pricing-actions">
-              <a class="btn btn-primary" href="#contact" data-modal-open>Book a Call</a>
-              <a class="btn btn-ghost" href="#contact" data-modal-open>Get a Quote</a>
+              <a class="btn btn-primary" href="#contact" data-modal-open>Book a Discovery Call</a>
+              <a class="btn btn-ghost" href="#contact" data-modal-open>See What's Included</a>
             </div>
           </article>
           <article class="pricing-card card-reveal">
             <div class="pricing-card-header">
               <div>
                 <p class="pricing-tier">Architect (Authority)</p>
-                <h3 class="pricing-price">$10,000–$18,000</h3>
+                <h3 class="pricing-price">Custom Pricing</h3>
                 <p class="pricing-best">Best for: Funded startups, multi-service brands</p>
               </div>
             </div>
@@ -396,15 +396,15 @@
             </ul>
             <p class="pricing-timeline">Timeline: 6–10 weeks</p>
             <div class="pricing-actions">
-              <a class="btn btn-primary" href="#contact" data-modal-open>Book a Call</a>
-              <a class="btn btn-ghost" href="#contact" data-modal-open>Get a Quote</a>
+              <a class="btn btn-primary" href="#contact" data-modal-open>Book a Discovery Call</a>
+              <a class="btn btn-ghost" href="#contact" data-modal-open>See What's Included</a>
             </div>
           </article>
           <article class="pricing-card card-reveal">
             <div class="pricing-card-header">
               <div>
                 <p class="pricing-tier">Signature (Digital Empire)</p>
-                <h3 class="pricing-price">$20,000–$40,000+</h3>
+                <h3 class="pricing-price">Custom Pricing</h3>
                 <p class="pricing-best">Best for: Multi-brand ecosystems, holdings, platforms</p>
               </div>
             </div>
@@ -416,8 +416,8 @@
             </ul>
             <p class="pricing-timeline">Timeline: Custom</p>
             <div class="pricing-actions">
-              <a class="btn btn-primary" href="#contact" data-modal-open>Book a Call</a>
-              <a class="btn btn-ghost" href="#contact" data-modal-open>Get a Quote</a>
+              <a class="btn btn-primary" href="#contact" data-modal-open>Book a Discovery Call</a>
+              <a class="btn btn-ghost" href="#contact" data-modal-open>See What's Included</a>
             </div>
           </article>
         </div>
@@ -556,13 +556,14 @@
         <h2 id="contact-title">Start a partnership</h2>
         <p>Tell us about your brand, platform, or system. We'll follow up with next steps.</p>
         <form class="contact-form">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
           <label>
             Name
-            <input type="text" name="name" placeholder="Your name" required />
+            <input type="text" name="name" placeholder="Your name" required maxlength="100" pattern="[A-Za-zÀ-ÿ\s'\.-]{2,100}" />
           </label>
           <label>
             Email
-            <input type="email" name="email" placeholder="you@email.com" required />
+            <input type="email" name="email" placeholder="you@email.com" required maxlength="254" />
           </label>
           <label>
             What are you looking for?
@@ -611,7 +612,7 @@
           </div>
           <label>
             Message
-            <textarea name="message" rows="4" placeholder="Tell us about your goals." required></textarea>
+            <textarea name="message" rows="4" placeholder="Tell us about your goals." required maxlength="2000"></textarea>
           </label>
           <button class="btn btn-primary" type="submit">Discuss a project</button>
         </form>

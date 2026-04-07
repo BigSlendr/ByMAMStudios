@@ -44,13 +44,14 @@
               <a class="btn btn-ghost capability-secondary-btn" href="../capabilities-deck/index.html">View Capabilities</a>
             </div>
             <form class="contact-form contact-form-page">
+              <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
               <label>
                 Name
-                <input type="text" name="name" placeholder="Your name" required />
+                <input type="text" name="name" placeholder="Your name" required maxlength="100" pattern="[A-Za-zÀ-ÿ\s'\.-]{2,100}" />
               </label>
               <label>
                 Email
-                <input type="email" name="email" placeholder="you@email.com" required />
+                <input type="email" name="email" placeholder="you@email.com" required maxlength="254" />
               </label>
               <label>
                 What are you looking for?
@@ -99,7 +100,7 @@
               </div>
               <label>
                 Message
-                <textarea name="message" rows="4" placeholder="Tell us about your goals." required></textarea>
+                <textarea name="message" rows="4" placeholder="Tell us about your goals." required maxlength="2000"></textarea>
               </label>
               <button class="btn btn-primary" type="submit">Discuss a project</button>
             </form>

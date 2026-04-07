@@ -516,6 +516,18 @@ summary:focus-visible,
   min-width: 140px;
 }
 
+.pricing-actions .btn-ghost {
+  border-color: var(--color-button-primary-bg);
+  color: var(--color-button-primary-bg);
+  background: transparent;
+}
+
+.pricing-actions .btn-ghost:hover {
+  border-color: var(--color-button-primary-bg);
+  background: var(--color-button-primary-bg);
+  color: #ffffff;
+}
+
 .pricing-subsection {
   margin-top: 56px;
   display: grid;

@@ -277,6 +277,11 @@ const initFormspree = () => {
       submitBtn.disabled = true;
 
       const data = new FormData(form);
+      if ((data.get('website') || '').toString().trim()) {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+        return;
+      }
 
       try {
         const res = await fetch('https://formspree.io/f/mqegwwwe', {

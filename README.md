@@ -30,3 +30,5 @@ All dynamic content lives in `./assets/data/site.json`. Edit this file to update
 - `assets/js/*.js`: Interactive behavior + rendering
 - `assets/data/site.json`: Content source
 
+## Security Notes
+"Run `npm audit` before each deployment. All high and critical vulnerabilities must be resolved before merging to main. Do not commit node_modules. Secrets must be stored in Cloudflare environment variables, not in source code."
