@@ -103,7 +103,7 @@ export default function Home() {
             {[
               { num: '5', label: 'Service Tiers' },
               { num: '4', label: 'Playbooks' },
-              { num: 'NYC-Based', label: 'Hoboken, NJ HQ' },
+              { num: 'NYC-Based', label: 'Staten Island, NY' },
               { num: 'Remote', label: 'Ready' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
@@ -306,7 +306,7 @@ export default function Home() {
             {[
               { stat: 'NYC Metro', label: 'In-person available' },
               { stat: 'Remote US', label: 'Full delivery' },
-              { stat: 'Hoboken, NJ', label: 'HQ location' },
+              { stat: 'Staten Island', label: 'NY · HQ location' },
             ].map((item) => (
               <div key={item.stat} className="text-center bg-card border border-border rounded-lg p-5">
                 <p className="font-display text-gold font-semibold text-lg">{item.stat}</p>

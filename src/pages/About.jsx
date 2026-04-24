@@ -17,7 +17,7 @@ export default function About() {
     <>
       <SEOHead
         title="About By MAM Studio — AI Systems & Brand Consulting"
-        description="By MAM Studio is the consulting and products practice of Michael A. Marino — AI systems architect, HR COE leader at New York Life, and multi-venture founder based in Hoboken, NJ."
+        description="By MAM Studio is the consulting and products practice of Michael A. Marino — AI systems architect, HR COE leader at New York Life, and multi-venture founder based in Staten Island, New York."
         canonical="https://bymamstudio.com/about"
       />
 
@@ -38,7 +38,7 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           <div>
             <p className="font-body text-stone leading-relaxed mb-5">
-              By MAM Studio is the consulting and products practice of Michael A. Marino — a multi-venture founder, systems architect, and budgeting and accounting professional based in Hoboken, NJ.
+              By MAM Studio is the consulting and products practice of Michael A. Marino — a multi-venture founder, systems architect, and budgeting and accounting professional based in Staten Island, New York.
             </p>
             <p className="font-body text-stone leading-relaxed mb-5">
               Michael's day job is at New York Life Insurance Company, where he leads the HR Coda Standardization and CI Support program across seven Centers of Excellence — a role that produced the governance frameworks, COE deployment models, and knowledge hub architecture that appear in the By MAM Studio product catalog.
