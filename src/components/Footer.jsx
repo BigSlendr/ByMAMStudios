@@ -48,6 +48,14 @@ export default function Footer() {
                   Assessment
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/services/operations-systems"
+                  className="font-body text-stone text-sm hover:text-warm transition-colors"
+                >
+                  Operations Systems
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -154,7 +154,7 @@ export default function Home() {
             How We Work Together
           </h2>
           <p className="font-body text-stone mb-12 max-w-xl leading-relaxed">
-            Two practice areas. One standard: every engagement delivers a reusable system with a trained internal operator.
+            Three practice areas. One standard: every engagement delivers a reusable system with a trained internal operator.
           </p>
 
           <div className="mb-10">
@@ -169,13 +169,25 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mb-8">
+          <div className="mb-10">
             <div className="flex items-center gap-3 mb-6">
               <span className="font-mono text-gold uppercase" style={{ fontSize: '10px', letterSpacing: '0.15em' }}>BRAND & WEB</span>
               <div className="h-px bg-gold/20 flex-1" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {SERVICES.filter((s) => s.group === 'Brand' || s.group === 'Web').map((service) => (
+                <ServiceCard key={service.slug} service={service} />
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-8">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="font-mono text-gold uppercase" style={{ fontSize: '10px', letterSpacing: '0.15em' }}>OPERATIONS SYSTEMS</span>
+              <div className="h-px bg-gold/20 flex-1" />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {SERVICES.filter((s) => s.group === 'Operations').map((service) => (
                 <ServiceCard key={service.slug} service={service} />
               ))}
             </div>

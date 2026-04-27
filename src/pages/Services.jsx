@@ -6,7 +6,7 @@ import ServiceCard from '../components/ServiceCard.jsx'
 import CTABanner from '../components/CTABanner.jsx'
 import { SERVICES } from '../data/services.js'
 
-const GROUPS = ['All', 'AI Systems', 'Brand', 'Web', 'Retainer']
+const GROUPS = ['All', 'AI Systems', 'Brand', 'Web', 'Operations', 'Retainer']
 
 const PROCESS_PHASES = [
   { step: '01', title: 'Discovery', desc: 'We map your current state — workflows, tools, gaps, and goals. No assumptions.' },
@@ -42,7 +42,7 @@ export default function Services() {
             Our Services
           </h1>
           <p className="font-body text-stone mt-4 max-w-2xl leading-relaxed">
-            Two practice areas — AI Systems and Brand & Web — with a consistent standard: every engagement delivers a reusable system with a trained internal operator and full documentation.
+            Three practice areas — AI Systems, Brand & Web, and Operations Systems — with a consistent standard: every engagement delivers a reusable system with a trained internal operator and full documentation.
           </p>
         </div>
       </div>

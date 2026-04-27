@@ -7,6 +7,7 @@ import Products from './pages/Products.jsx'
 import ProductDetail from './pages/ProductDetail.jsx'
 import Services from './pages/Services.jsx'
 import ServiceDetail from './pages/ServiceDetail.jsx'
+import OperationsSystems from './pages/OperationsSystems.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import Resources from './pages/Resources.jsx'
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:slug" element={<ProductDetail />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/operations-systems" element={<OperationsSystems />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

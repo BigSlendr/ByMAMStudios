@@ -361,6 +361,46 @@ export const SERVICES = [
     ],
   },
   {
+    slug: 'operations-systems',
+    name: 'Operations Systems',
+    subtitle: 'One place for everything your team thinks, tracks, and builds.',
+    category: 'OPERATIONS',
+    group: 'Operations',
+    price: 'From $1,500',
+    priceRange: '$1,500 – $4,000+',
+    duration: 'Engagement-based',
+    color: '#3E9B7B',
+    description:
+      'Most teams run on scattered Google Docs, spreadsheets nobody updates, and Slack threads that disappear. We introduce and set up Coda for growing teams — so your docs, tasks, and workflows live in one governed system from day one.',
+    longDescription:
+      'A governed Coda workspace gives your team a single operating system for everything they think, track, and build. We design the architecture, configure permissions, build your template library, and train your team — so the system is usable from day one without requiring ongoing setup from us. Already using Coda? We offer a free discovery call to assess your current setup and identify structural gaps before any commitment.',
+    deliverables: [
+      'Hub-and-spoke workspace architecture',
+      'Role-based permissions and document ownership',
+      'Template libraries and naming conventions',
+      'Cross-department governance frameworks',
+      'Onboarding documentation for new team members',
+      'Training session included',
+    ],
+    process: [
+      { step: '01', title: 'Discovery Call', description: 'We learn how your team works — tools, workflows, pain points, and goals. Free for teams already using Coda.' },
+      { step: '02', title: 'Workspace Architecture', description: 'Hub-and-spoke structure designed, permissions mapped, and template library scoped to your actual workflows.' },
+      { step: '03', title: 'Build & Configure', description: 'Your Coda workspace is built, populated with your content, and configured to your team\'s naming conventions and governance standards.' },
+      { step: '04', title: 'Training & Handoff', description: 'Live walkthrough for your team so everyone can use the system from day one. Full documentation included.' },
+    ],
+    whoFor: [
+      { title: 'Growing teams drowning in scattered docs', desc: 'Your team has no single source of truth. Files live everywhere, nothing is current, and nobody can find what they need without asking.' },
+      { title: 'New operations or team leads', desc: "You're stepping into a role where operational chaos is the norm. You need a governed system fast — one you didn't have to design yourself." },
+      { title: 'Teams already using Coda', desc: "You're in Coda but your workspace has grown without structure. A free discovery call will give you a clear picture of what's broken and what to fix." },
+    ],
+    faq: [
+      { q: 'Do we need to already be using Coda?', a: 'No. We can introduce Coda from scratch and build your entire workspace from day one. We also offer a free discovery call for teams already using Coda who want to improve their current setup — no commitment required.' },
+      { q: "What's included in the free discovery call?", a: 'A 20-minute intro call where we learn how your team currently works and tell you exactly what we would build for your situation and what it would cost.' },
+      { q: 'How long does implementation take?', a: 'A Foundation Buildout typically takes 2–4 weeks from kickoff to handoff. Timeline depends on team size and workspace complexity.' },
+      { q: 'What happens after the buildout?', a: 'Your team gets a trained operator and full documentation. Ongoing support is available via the Governance Retainer for teams that want monthly oversight and workspace expansion as they grow.' },
+    ],
+  },
+  {
     slug: 'service-website-modernization',
     name: 'Service Website Modernization',
     subtitle: 'The Modern Service Conversion System™ — built for trades, home services, and local operators',
