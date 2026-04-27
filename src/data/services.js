@@ -452,7 +452,7 @@ export const SERVICES = [
     color: '#6B8AF0',
     seoTitle: 'Small Business Website Design & Digital Infrastructure | By MAM Studio',
     seoDescription:
-      'By MAM Studio builds professional websites, digital infrastructure, automations, and workflow systems for small businesses, solo entrepreneurs, and local service providers.',
+      'By MAM Studio builds professional websites, digital infrastructure, and automations for small businesses, solo entrepreneurs, and local service providers.',
     description:
       'Professional websites and connected digital systems for small businesses, solo entrepreneurs, and local service providers. Includes mobile-friendly websites, landing pages, service pages, contact forms, quote/inquiry flows, booking flows, automations, dashboards, SEO-ready structure, domain/DNS support, hosting setup, analytics, and scalable infrastructure.',
     longDescription:
