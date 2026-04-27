@@ -26,8 +26,8 @@ export default function ServiceDetail() {
   return (
     <>
       <SEOHead
-        title={`${service.name} | By MAM Studio`}
-        description={service.description}
+        title={service.seoTitle || `${service.name} | By MAM Studio`}
+        description={service.seoDescription || service.description}
         canonical={`https://bymamstudio.com/services/${service.slug}`}
       />
 
@@ -86,7 +86,7 @@ export default function ServiceDetail() {
                 href={`mailto:hello@bymamstudio.com?subject=${mailtoSubject}`}
                 className="block w-full text-center bg-gold text-ink font-body font-semibold py-3 rounded mb-3 hover:bg-goldlt transition-all"
               >
-                Book a Discovery Call
+                {service.ctaText || 'Book a Discovery Call'}
               </a>
               <Link
                 to="/assessment"

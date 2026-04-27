@@ -440,4 +440,49 @@ export const SERVICES = [
       { q: 'Do I need to pay a monthly platform fee?', a: 'No. The site is built on a platform appropriate to your business that you own. There is no locked-in monthly fee to us.' },
     ],
   },
+  {
+    slug: 'websites-digital-infrastructure',
+    name: 'Websites & Digital Infrastructure',
+    subtitle: 'Professional websites and connected systems built to scale with your business',
+    category: 'WEB',
+    group: 'Web',
+    price: 'From $2,500',
+    priceRange: '$2,500 – $12,000+',
+    duration: '3–10 weeks',
+    color: '#6B8AF0',
+    seoTitle: 'Small Business Website Design & Digital Infrastructure | By MAM Studio',
+    seoDescription:
+      'By MAM Studio builds professional websites, digital infrastructure, automations, and workflow systems for small businesses, solo entrepreneurs, and local service providers.',
+    description:
+      'Professional websites and connected digital systems for small businesses, solo entrepreneurs, and local service providers. Includes mobile-friendly websites, landing pages, service pages, contact forms, quote/inquiry flows, booking flows, automations, dashboards, SEO-ready structure, domain/DNS support, hosting setup, analytics, and scalable infrastructure.',
+    longDescription:
+      'This engagement is built for operators who need more than a basic website. We design and implement a complete digital foundation: your core site experience, lead and booking flows, automation handoffs, analytics visibility, and the infrastructure needed to grow without rebuilding every quarter. The result is a professional, mobile-first web presence connected to the systems your business relies on day to day.',
+    deliverables: [
+      'Mobile-friendly website architecture with homepage, landing pages, and core service pages',
+      'Conversion systems: contact forms, quote/inquiry flows, and booking workflows',
+      'Automation layer connecting web forms to email, CRM, and internal workflow handoffs',
+      'Dashboard and analytics setup for visibility into traffic, leads, and conversion behavior',
+      'SEO-ready page structure including technical foundations for search discovery',
+      'Domain and DNS configuration support with hosting setup and go-live checklist',
+      'Scalable infrastructure documentation so your team can maintain and expand confidently',
+    ],
+    process: [
+      { step: '01', title: 'Infrastructure Discovery', description: 'We map your offers, audience, current tools, and operational gaps to define the right website and systems scope.' },
+      { step: '02', title: 'Architecture & Conversion Design', description: 'Site structure, landing/service page hierarchy, and inquiry/booking flows are designed for clarity and conversion.' },
+      { step: '03', title: 'Build & Systems Integration', description: 'We implement the website, connect forms and automations, configure analytics, and test every user and internal workflow path.' },
+      { step: '04', title: 'Launch & Operator Handoff', description: 'Domain/DNS and hosting are finalized, launch checks are completed, and your internal operator receives training and documentation.' },
+    ],
+    whoFor: [
+      { title: 'Small businesses needing a real digital foundation', desc: 'You need a professional website plus connected systems that can support lead flow, service delivery, and growth.' },
+      { title: 'Solo entrepreneurs scaling beyond DIY tools', desc: 'You have outgrown patchwork tools and need a cleaner, more credible setup that automates routine follow-up work.' },
+      { title: 'Local service providers improving lead quality', desc: 'You want clearer service pages, stronger trust signals, and smoother quote or booking pathways that produce better inquiries.' },
+    ],
+    faq: [
+      { q: 'Is this just web design?', a: 'No. We build both the customer-facing website and the connected digital infrastructure behind it — forms, automations, hosting setup, analytics, and operational handoffs.' },
+      { q: 'Can you support domain and DNS setup?', a: 'Yes. Domain and DNS support is included so your launch is technically sound and properly connected to your hosting and service tools.' },
+      { q: 'Do you include SEO setup?', a: 'Yes. We implement SEO-ready structure and technical foundations, including page architecture and metadata-ready templates for ongoing optimization.' },
+      { q: 'What happens after launch?', a: 'You receive documentation and an operator handoff so your team can maintain the system, with optional ongoing support available if needed.' },
+    ],
+    ctaText: 'Build Your Digital Foundation',
+  },
 ]
